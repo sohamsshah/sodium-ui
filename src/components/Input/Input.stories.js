@@ -7,5 +7,5 @@ export default {
     component:Input
 }
 
-export const Simple = () => <Input size="large">Primary</Input>
-
+export const Standard = () => <Input size="medium" variant="standard"></Input>
+export const Outlined = () => <Input size="medium" variant="outlined"></Input>

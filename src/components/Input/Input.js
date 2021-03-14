@@ -4,10 +4,10 @@ function Input(props){
     const {size="medium" , variant = "standard", children, ...rest} = props;
     return (
     <div className="group">      
-      <input className={`${size}`} type="text" required />
+      <input className={`${size} ${variant}`} type="text" required />
       <span class="highlight"></span>
       <span className={`${size} bar`}></span>
-      <label>Name</label>
+      <label className={`${variant}-label`}>Name</label>
     </div>
 
     )

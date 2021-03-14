@@ -5,38 +5,55 @@
 input {
   display:block;
   border:none;
-  border-bottom:1px solid #7b6fc7;
+}
+
+.standard{
+    border-bottom:1px solid #443d70;
+    
+}
+
+.outlined{
+    border: solid 1px black;
+    border-radius: 2px;
 }
 
 .small{
-    font-size:0.5rem;
+    font-size:20px;
     width:200px;
     padding:0.8rem 0;
-    padding-bottom: 0.2rem;
+    padding-bottom: 2px;
 }
 
 .medium{
-    font-size:1rem;
+    font-size:20px;
     width:400px;
     padding:0.5rem 0;
-    padding-bottom: 0.2rem;
+    padding-bottom: 2px;
 }
 
 .large{
-    font-size:1.2rem;
+    font-size:20px;
     width:600px;
     padding:0.7rem 0;
-    padding-bottom: 0.2rem;
+    padding-bottom: 2px;
 }
 
-input:focus { outline:none; border-bottom: none;}
+.standard:focus { 
+    outline:none; border-bottom: none;
+    border-bottom: solid 2px #443d70;
+}
+.outlined:focus { 
+    outline:none; 
+    border: solid 2px #443d70;
+}
 
-label {
+.standard-label {
   color:#999; 
-  font-size:1rem;
+  font-size:15px;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
+  vertical-align: middle;
   left:5px;
   top:10px;
   transition:0.2s ease all; 
@@ -44,68 +61,24 @@ label {
   -webkit-transition:0.2s ease all;
 }
 
-/* active state */
+.outlined-label {
+    color:#999; 
+    font-size:15px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    vertical-align: middle;
+    left:10px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
 input:focus ~ label, input:valid ~ label 		{
-  top:-15px;
-  font-size:14px;
+  top:-5px;
+  font-size:12px;
   color:#443d70;
-}
-
-
-.bar.small { position:relative; display:block; width:200px;}
-.bar.medium { position:relative; display:block; width:400px;}
-.bar.large { position:relative; display:block; width:600px;}
-.bar:before, .bar:after {
-  content:'';
-  height:2px; 
-  width:0;
-  bottom:1px; 
-  position:absolute;
-  background:#443d70; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
-}
-.bar:before {
-  left:50%;
-}
-.bar:after {
-  right:50%; 
-}
-
-/* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:50%;
-}
-
-/* HIGHLIGHTER ================================== */
-.highlight {
-  position:absolute;
-  height:60%; 
-  width:100px; 
-  top:25%; 
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
-}
-
-/* active state */
-input:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.3s ease;
-  -moz-animation:inputHighlighter 0.3s ease;
-  animation:inputHighlighter 0.3s ease;
-}
-
-/* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-	from { background:#5264AE; }
-  to 	{ width:0; background:transparent; }
-}
-@-moz-keyframes inputHighlighter {
-	from { background:#5264AE; }
-  to 	{ width:0; background:transparent; }
-}
-@keyframes inputHighlighter {
-	from { background:#5264AE; }
-  to 	{ width:0; background:transparent; }
+  padding: 0 2px;
+  background-color: white;
 }
