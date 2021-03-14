@@ -6,7 +6,7 @@
 
 <div align="center">
 
-Swiftly develop elegant [React](https://reactjs.org/) apps. **Sodium** 🧪 is a simple, modular and customizable web component library to build beautiful and accessible UI pieces for your React needs.
+Swiftly develop elegant [React](https://reactjs.org/) apps. **Sodium**  is a simple, modular and customizable web component library to build beautiful and accessible UI pieces for your React needs.
 
 <!-- [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sohamsshah/sodium-ui/blob/master/LICENSE) -->
 
@@ -15,7 +15,7 @@ Swiftly develop elegant [React](https://reactjs.org/) apps. **Sodium** 🧪 is a
 ---
 
 
-## **Installation** 📥
+## **Installation** 
 
 Sodium-UI is available as an [npm package](https://www.npmjs.com/package/sodium-ui).
 
@@ -23,7 +23,7 @@ Sodium-UI is available as an [npm package](https://www.npmjs.com/package/sodium-
 npm i sodium-ui
 ```
 
-## **Usage** 💻
+## **Usage** 
 
 ```jsx
 import * as React from 'react';
@@ -37,7 +37,7 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
-## **License** 📜
+## **License** 
 
 This project is licensed under the terms of the
 [MIT license](/LICENSE).
