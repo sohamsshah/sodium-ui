@@ -1,0 +1,25 @@
+.button{
+    border:none;
+    color:white;
+    padding:1rem;
+    text-align:center;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.primary{
+    background-color: blue;
+}
+
+.secondary{
+    background-color: #eee;
+}
+
+.success{
+    background-color: green;
+}
+
+.danger{
+    background-color: red;
+}
