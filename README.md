@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/sohamsshah/sodium-ui" rel="noopener" target="_blank"><img width="200" src="./public/sodium.png" alt="Material-UI logo"></a></p>
+  <a href="https://github.com/sohamsshah/sodium-ui" rel="noopener" target="_blank"><img width="150" src="./public/sodium.png" alt="Material-UI logo"></a></p>
 </p>
 
 <h1 align="center"><b>Sodium UI</b></h1>
