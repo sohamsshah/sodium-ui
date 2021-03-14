@@ -1,25 +1,260 @@
-.button{
-    border:none;
+:root{
+    --primary-button: #3b3561;
+    --primary-button-hover:#282441;
+    --secondary-button: #ff0099 ;
+    --secondary-button-hover: #d3007f ;
+    --success-button: #28a745;
+    --success-button-hover:#1d7932;
+    --warning-button-hover:#d39e00;
+    --warning-button:#ffc107;
+    --danger-button:#dc3545;
+    --danger-button-hover:#a52734;
+    --info-button:#17a2b8;
+    --info-button-hover:#117888;
+    --light-button: #f8f9fa;
+    --light-button-hover: #e7e7e7;
+    --dark-button: #343a40;
+    --dark-button-hover: #22262b;
+}
+
+.na-button{
     color:white;
-    padding:1rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
     text-align:center;
+    font-size: 1rem;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    border:none;
+    box-shadow: 0 3px 5px -5px black;
 }
 
-.primary{
-    background-color: blue;
+.na-button:hover{
+    transition:0.4s;
 }
 
-.secondary{
-    background-color: #eee;
+.na-button:focus{
+    outline:none;
 }
 
-.success{
-    background-color: green;
+
+/* Filled Buttons*/
+
+.na-primary.na-filled{
+    background-color: var(--primary-button);
 }
 
-.danger{
-    background-color: red;
+.na-primary.na-filled:hover{
+    background-color: var(--primary-button-hover);
+}
+
+.na-primary.na-filled:focus{
+    box-shadow: 0 0 6px var(--primary-button-hover);
+}
+
+.na-secondary.na-filled{
+    background-color: var(--secondary-button);
+}
+
+.na-secondary.na-filled:hover{
+    background-color: var(--secondary-button-hover);
+}
+
+.na-secondary.na-filled:focus{
+    box-shadow: 0 0 6px var(--secondary-button-hover);
+}
+
+.na-success.na-filled{
+    background-color: var(--success-button);
+}
+
+.na-success.na-filled:hover{
+    background-color: var(--success-button-hover);
+}
+
+.na-success.na-filled:focus{
+    box-shadow: 0 0 6px var(--success-button-hover);
+}
+
+.na-danger.na-filled{
+    background-color: var(--danger-button);
+}
+
+.na-danger.na-filled:hover{
+    background-color: var(--danger-button-hover);
+}
+
+.na-danger.na-filled:focus{
+    box-shadow: 0 0 6px var(--danger-button-hover);
+}
+
+.na-warning.na-filled{
+    background-color: var(--warning-button);
+}
+
+.na-warning.na-filled:hover{
+    background-color: var(--warning-button-hover);
+}
+
+.na-warning.na-filled:focus{
+    box-shadow: 0 0 6px var(--warning-button-hover);
+}
+
+.na-info.na-filled{
+    background-color: var(--info-button);
+}
+
+.na-info.na-filled:hover{
+    background-color: var(--info-button-hover);
+}
+
+.na-info.na-filled:focus{
+    box-shadow: 0 0 6px var(--info-button-hover);;
+}
+
+.na-light.na-filled{
+    background-color: var(--light-button);
+    color:black;
+}
+
+.na-light.na-filled:hover{
+    background-color: var(--light-button-hover);
+}
+
+.na-light.na-filled:focus{
+    box-shadow: 0 0 6px var(--light-button-hover);
+}
+
+.na-dark.na-filled{
+    background-color: var(--dark-button);
+}
+
+.na-dark.na-filled:hover{
+    background-color: var(--dark-button-hover);
+}
+
+.na-dark.na-filled:focus{
+    box-shadow: 0 0 6px var(--dark-button-hover);;
+}
+
+/* Bordered Buttons */
+.na-primary.na-bordered{
+    color: var(--primary-button);
+    border: solid 1px var(--primary-button);
+    
+}
+
+.na-primary.na-bordered:hover{
+    background-color: var(--primary-button-hover);
+    color:white;
+}
+
+.na-primary.na-bordered:focus{
+    box-shadow: 0 0 6px var(--primary-button-hover);
+}
+
+.na-secondary.na-bordered{
+    color: var(--secondary-button);
+    border: solid 1px var(--secondary-button);
+    
+}
+
+.na-secondary.na-bordered:hover{
+    background-color: var(--secondary-button-hover);
+    color:white;
+}
+
+.na-secondary.na-bordered:focus{
+    box-shadow: 0 0 6px var(--secondary-button-hover);
+}
+
+.na-success.na-bordered{
+    color: var(--success-button);
+    border: solid 1px var(--success-button);
+    
+}
+
+.na-success.na-bordered:hover{
+    background-color: var(--success-button-hover);
+    color:white;
+}
+
+.na-success.na-bordered:focus{
+    box-shadow: 0 0 6px var(--success-button-hover);
+}
+
+.na-danger.na-bordered{
+    color: var(--danger-button);
+    border: solid 1px var(--danger-button);
+    
+}
+
+.na-danger.na-bordered:hover{
+    background-color: var(--danger-button-hover);
+    color:white;
+}
+
+.na-danger.na-bordered:focus{
+    box-shadow: 0 0 6px var(--danger-button-hover);
+}
+
+.na-warning.na-bordered{
+    color: var(--warning-button);
+    border: solid 1px var(--warning-button);
+    
+}
+
+.na-warning.na-bordered:hover{
+    background-color: var(--warning-button-hover);
+    color:white;
+}
+
+.na-info.na-bordered:focus{
+    box-shadow: 0 0 6px var(--info-button-hover);
+}
+
+.na-info.na-bordered{
+    color: var(--info-button);
+    border: solid 1px var(--info-button);
+    
+}
+
+.na-info.na-bordered:hover{
+    background-color: var(--info-button-hover);
+    color:white;
+}
+
+.na-info.na-bordered:focus{
+    box-shadow: 0 0 6px var(--info-button-hover);
+}
+
+.na-light.na-bordered{
+    color: var(--light-button);
+    border: solid 1px var(--light-button);
+    
+}
+
+.na-light.na-bordered:hover{
+    background-color: var(--light-button-hover);
+    color:white;
+}
+
+.na-light.na-bordered:focus{
+    box-shadow: 0 0 6px var(--light-button-hover);
+}
+
+.na-dark.na-bordered{
+    color: var(--dark-button);
+    border: solid 1px var(--dark-button);
+    
+}
+
+.na-dark.na-bordered:hover{
+    background-color: var(--dark-button-hover);
+    color:white;
+}
+
+.na-dark.na-bordered:focus{
+    box-shadow: 0 0 6px var(--dark-button-hover);
 }
