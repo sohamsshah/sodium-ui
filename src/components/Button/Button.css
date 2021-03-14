@@ -1,5 +1,5 @@
 :root{
-    --primary-button: #3b3561;
+    --primary-button: #443d70;
     --primary-button-hover:#282441;
     --secondary-button: #ff0099 ;
     --secondary-button-hover: #d3007f ;
@@ -14,7 +14,7 @@
     --light-button: #f8f9fa;
     --light-button-hover: #e7e7e7;
     --dark-button: #343a40;
-    --dark-button-hover: #22262b;
+    --dark-button-hover: #131518;
 }
 
 .na-button{
