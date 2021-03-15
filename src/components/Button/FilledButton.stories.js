@@ -3,7 +3,7 @@ import Button from "./Button"
 
 // meta data 
 export default {
-    title: 'Form/Button/Filled', //mandatory
+    title: 'Sodium UI/Form/Button/Filled', //mandatory
     component:Button
 }
 

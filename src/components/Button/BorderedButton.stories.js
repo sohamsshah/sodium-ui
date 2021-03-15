@@ -1,10 +1,12 @@
 import React from 'react';
 import Button from "./Button"
+// import Center from "../../Utils/Center/Center"
 
 // meta data 
 export default {
-    title: 'Form/Button/Bordered', //mandatory
-    component:Button
+    title: 'Sodium UI/Form/Button/Bordered', //mandatory
+    component:Button,
+    // decorators: [(story) => <Center>{story()}</Center>]
 }
 
 export const Primary = () => <Button variant="primary" kind="bordered">Primary</Button>
