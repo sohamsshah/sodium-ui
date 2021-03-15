@@ -1,19 +1,67 @@
-import React from 'react';
-import Button from "./Button"
-// import Center from "../../Utils/Center/Center"
+import React, { Children } from 'react';
+import Button from "./Button";
+import {action, actions} from "@storybook/addon-actions";
 
 // meta data 
 export default {
     title: 'Sodium UI/Form/Button/Bordered', //mandatory
     component:Button,
-    // decorators: [(story) => <Center>{story()}</Center>]
+    parameters: {
+        actions: {
+          handles: ['click'],
+        }
+    },
+    args: {
+        children: 'Bordered Button',
+        kind: "bordered",
+        
+    },
+    argsTypes:{
+        variant: {control: "text"},
+        kind: {control: "text"},
+        
+    }
 }
 
-export const Primary = () => <Button variant="primary" kind="bordered">Primary</Button>
-export const Secondary = () => <Button variant="secondary" kind="bordered">Secondary</Button>
-export const Success = () => <Button variant="success" kind="bordered">Success</Button>
-export const Warning = () => <Button variant="warning" kind="bordered">Warning</Button>
-export const Danger = () => <Button variant="danger" kind="bordered">Danger</Button>
-export const Info = () => <Button variant="info" kind="bordered">Info</Button>
-export const Light = () => <Button variant="light" kind="bordered">Light</Button>
-export const Dark = () => <Button variant="dark" kind="bordered">Dark</Button>
+const Template = args => <Button {...args} />
+
+export const Primary = Template.bind({})
+Primary.args = {
+    variant: "primary",
+    
+}
+
+export const Secondary = Template.bind({})
+Secondary.args = {
+    variant: "secondary",
+}
+
+export const Success = Template.bind({})
+Success.args = {
+    variant: "success",
+}
+
+export const Warning = Template.bind({})
+Warning.args = {
+    variant: "warning",
+}
+
+export const Danger = Template.bind({})
+Danger.args = {
+    variant: "danger",
+}
+
+export const Info = Template.bind({})
+Info.args = {
+    variant: "info",
+}
+
+export const Light = Template.bind({})
+Light.args = {
+    variant: "light",
+}
+
+export const Dark = Template.bind({})
+Dark.args = {
+    variant: "dark",
+}
