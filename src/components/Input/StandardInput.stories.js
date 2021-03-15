@@ -4,9 +4,39 @@ import Input from "./Input"
 // meta data 
 export default {
     title: 'Sodium UI/Form/Input/Standard', //mandatory
-    component:Input
+    component:Input,
+    component:Input,
+    parameters: {
+        actions: {
+          handles: ['click'],
+        }
+    },
+    args: {
+        variant: "standard",
+        
+    },
+    argsTypes:{
+        variant: {control: "text"},
+        size: {control: "text"}
+        
+    }
 }
 
-export const Small = () => <Input size="small" variant="standard"></Input>
-export const Medium = () => <Input size="medium" variant="standard"></Input>
-export const Large = () => <Input size="large" variant="standard"></Input>
+const Template = args => <Input {...args} />
+
+export const Small = Template.bind({})
+Small.args = {
+size: "small",
+
+}
+
+export const Medium = Template.bind({})
+Medium.args = {
+size: "medium",
+
+}
+
+export const Large = Template.bind({})
+Large.args = {
+size: "large",
+}

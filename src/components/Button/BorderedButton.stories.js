@@ -1,6 +1,5 @@
 import React, { Children } from 'react';
 import Button from "./Button";
-import {action, actions} from "@storybook/addon-actions";
 
 // meta data 
 export default {
