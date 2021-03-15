@@ -11,7 +11,8 @@
     "storybook": "start-storybook -p 6006 -s public --no-manager-cache",
     "build-storybook": "build-storybook -s public",
     "build-sodium": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chromatic": "npx chromatic --project-token 1fa832d3a2eb"
   },
   "eslintConfig": {
     "extends": [
@@ -34,15 +35,16 @@
   "devDependencies": {
     "@babel/preset-react": "^7.12.13",
     "@rollup/plugin-node-resolve": "^11.2.0",
+    "@storybook/addon-a11y": "^6.1.21",
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.1.21",
     "@storybook/addons": "^6.1.21",
     "@storybook/node-logger": "^6.1.21",
     "@storybook/preset-create-react-app": "^3.1.7",
-    "@storybook/addon-a11y": "^6.1.21",
     "@storybook/react": "^6.1.21",
     "@storybook/theming": "^6.1.21",
+    "chromatic": "^5.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.3",
