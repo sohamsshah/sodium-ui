@@ -19,7 +19,7 @@ export default {
     },
     argsTypes:{
         variant: {control: "text"},
-        kind: {control: "text"},
+        children: {control: "text"},
         
     }
 }

@@ -17,7 +17,7 @@ export default {
     },
     argsTypes:{
         variant: {control: "text"},
-        kind: {control: "text"},
+        src: {control: "text"},
         
     }
 }
