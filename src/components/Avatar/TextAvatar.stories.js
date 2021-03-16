@@ -12,7 +12,8 @@ export default {
     },
     args: {
         variant: "text",
-        children: "NA"
+        children: "NA",
+        badge: {animation: false, badgeColor: "green"}
         
         
     },

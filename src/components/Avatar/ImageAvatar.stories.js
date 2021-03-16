@@ -12,8 +12,8 @@ export default {
     },
     args: {
         variant: "image",
-        src: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-        
+        src: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        badge: {animation: false, badgeColor: "green"}
     },
     argsTypes:{
         variant: {control: "text"},

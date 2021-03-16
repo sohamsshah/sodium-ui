@@ -32,7 +32,11 @@ function Text({children}){
     </div>
 }
 function Avatar(props){
-    const {size = "medium", variant = "text", src, children, ...rest} = props;
+    const {size = "medium", variant = "text", badge, src, children, ...rest} = props;
+    if(typeof badge !== 'undefined'){
+        var {animation=true, badgeColor = "green"} = badge;
+    }
+    
     return (
         <div className={`na-avatar na-avatar-${size}`}>
             {
@@ -41,8 +45,9 @@ function Avatar(props){
           'text': <Text children={children}/>
         }[variant]
       }
-        </div>
+        {(typeof badge !== "undefined")?(<div style={{backgroundColor: `${badgeColor}`}} className="na-avatar-badge na-badge-animate"></div>):""}
+    </div>
     )
-}
+    }
 
 export default Avatar;
