@@ -1,4 +1,6 @@
 :root{
+    --default-button: rgb(25, 118, 210);
+    --default-button-hover: #1564b3;
     --primary-button: #443d70;
     --primary-button-hover:#282441;
     --secondary-button: #ff0099 ;
@@ -15,6 +17,51 @@
     --light-button-hover: #e7e7e7;
     --dark-button: #343a40;
     --dark-button-hover: #131518;
+}
+
+/* Floating Action Button */
+.na-fab.na-fab-standard{
+    border-radius: 100%;
+    display:flex;
+    font-size: 1.5rem;
+    height:1em;
+    width:1em;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem;
+    background-color: var(--default-button);
+    box-shadow: 0 0 6px var(--default-button-hover);
+}
+
+.na-fab.na-fab-standard:hover{
+    background-color: var(--default-button-hover);
+}
+
+.na-fab.na-fab-standard:focus{
+transition-property: rgba(25,118,210,0.9);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.2s;
+}
+
+.na-fab.na-fab-extended{
+    border-radius: 32px;
+    display:flex;
+    font-size: 1rem;
+    padding:0.5rem 1rem;
+    background-color: var(--default-button);
+    box-shadow: 0 0 6px var(--default-button-hover);
+}
+
+.na-fab.na-fab-extended:hover{
+    background-color: var(--default-button-hover);
+}
+
+.na-fab.na-fab-extended:focus{
+transition-property: rgba(25,118,210,0.9);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.2s;
 }
 
 .na-button{
@@ -40,6 +87,19 @@
 
 
 /* Filled Buttons*/
+
+.na-default.na-filled{
+    background-color: var(--default-button);
+}
+
+.na-default.na-filled:hover{
+    background-color: var(--default-button-hover);
+}
+
+.na-default.na-filled:focus{
+    box-shadow: 0 0 6px var(--default-button-hover);
+}
+
 
 .na-primary.na-filled{
     background-color: var(--primary-button);
@@ -139,6 +199,22 @@
 }
 
 /* Bordered Buttons */
+
+.na-default.na-bordered{
+    color: var(--default-button);
+    border: solid 1px var(--default-button);
+    
+}
+
+.na-default.na-bordered:hover{
+    background-color: var(--default-button);
+    color:white;
+}
+
+.na-default.na-bordered:focus{
+    box-shadow: 0 0 6px var(--primary-button-hover);
+}
+
 .na-primary.na-bordered{
     color: var(--primary-button);
     border: solid 1px var(--primary-button);
@@ -146,7 +222,7 @@
 }
 
 .na-primary.na-bordered:hover{
-    background-color: var(--primary-button-hover);
+    background-color: var(--primary-button);
     color:white;
 }
 
@@ -161,7 +237,7 @@
 }
 
 .na-secondary.na-bordered:hover{
-    background-color: var(--secondary-button-hover);
+    background-color: var(--secondary-button);
     color:white;
 }
 
@@ -176,7 +252,7 @@
 }
 
 .na-success.na-bordered:hover{
-    background-color: var(--success-button-hover);
+    background-color: var(--success-button);
     color:white;
 }
 
@@ -191,7 +267,7 @@
 }
 
 .na-danger.na-bordered:hover{
-    background-color: var(--danger-button-hover);
+    background-color: var(--danger-button);
     color:white;
 }
 
@@ -206,7 +282,7 @@
 }
 
 .na-warning.na-bordered:hover{
-    background-color: var(--warning-button-hover);
+    background-color: var(--warning-button);
     color:white;
 }
 
@@ -221,7 +297,7 @@
 }
 
 .na-info.na-bordered:hover{
-    background-color: var(--info-button-hover);
+    background-color: var(--info-button);
     color:white;
 }
 
@@ -230,14 +306,14 @@
 }
 
 .na-light.na-bordered{
-    color: var(--light-button);
-    border: solid 1px var(--light-button);
+    color: black;
+    border: solid 1px black;
     
 }
 
 .na-light.na-bordered:hover{
     background-color: var(--light-button-hover);
-    color:white;
+    color:black;
 }
 
 .na-light.na-bordered:focus{
@@ -251,7 +327,7 @@
 }
 
 .na-dark.na-bordered:hover{
-    background-color: var(--dark-button-hover);
+    background-color: var(--dark-button);
     color:white;
 }
 
