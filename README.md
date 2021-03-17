@@ -50,7 +50,7 @@ ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
 ## **We love Contributions** 💖
-**Sodium UI** is truly Open Source. Any sort of contribution to this project are highly appreciated. Read the [Contributing Guideline]() to learn more on how to setup development environment, propose bug fixes or improvements and how to build and test your changes to Sodium UI.
+**Sodium UI** is truly Open Source. Any sort of contribution to this project are highly appreciated. Read the [Contributing Guideline](/CONTRIBUTING.md) to learn more on how to setup development environment, propose bug fixes or improvements and how to build and test your changes to Sodium UI.
 
 
 ## **License** 
