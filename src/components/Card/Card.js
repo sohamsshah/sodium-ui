@@ -25,7 +25,6 @@ const Text = ({children, ...rest}) => {
 }
 
 
-
 export default function Card({children, ...rest}){
     return(
         <Paper {...rest}>
@@ -33,6 +32,7 @@ export default function Card({children, ...rest}){
         </Paper>
     )
 }
+
 
 Card.Img = Img;
 Card.Title = Title;
