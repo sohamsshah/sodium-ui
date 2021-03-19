@@ -43,7 +43,7 @@ function Avatar(props){
         {
           'image': <Image src={`${src}`} />,
           'text': <Text children={children}/>
-        }[variant]
+        }[variant] || <Text children={children}/>
       }
         {(typeof badge !== "undefined")?(<div style={{backgroundColor: `${badgeColor}`}} className="na-avatar-badge na-badge-animate"></div>):""}
     </div>
