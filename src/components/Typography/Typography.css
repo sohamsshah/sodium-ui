@@ -1,0 +1,113 @@
+.na-h1{
+    font-size: 6rem;
+    margin-bottom: 0.35em;
+    font-weight: 300;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+}
+
+.na-h2{
+    font-size: 3.75rem;
+    margin-bottom: 0.35em;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+}
+
+.na-h2{
+    font-size: 3.75rem;
+    margin-bottom: 0.35em;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+}
+
+.na-h3{
+    font-size: 3rem;
+    margin-bottom: 0.35em;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: 0em;
+}
+
+.na-h4{
+    font-size: 2.125rem;
+    font-weight: 400;
+    margin-bottom: 0.35em;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+}
+
+.na-h5{
+    font-size: 1.5rem;
+    margin-bottom: 0.35em;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em
+}
+
+.na-h6{
+    font-size: 1.25rem;
+    margin-bottom: 0.35em;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+}
+
+.na-subtitle1{
+    font-size: 1rem;
+    margin-bottom: 0.35em;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+}
+
+.na-subtitle2{
+    font-size: 0.875rem;
+    margin-bottom: 0.35em;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+}
+
+.na-body1{
+    font-size: 1rem;
+    margin-bottom: 0.35em;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+.na-body2{
+    font-size: 0.875rem;
+    margin-bottom: 0.35em;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+}
+
+.na-button-text{
+    font-size: 0.875rem;
+    margin-bottom: 0.35em;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+.na-caption-text{
+    font-size: 0.75rem;
+    margin-bottom: 0.35em;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+}
+
+.na-outline-text{
+    font-size: 0.75rem;
+    margin-bottom: 0.35em;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+}
