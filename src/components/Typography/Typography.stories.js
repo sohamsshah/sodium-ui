@@ -14,7 +14,6 @@ export const h1 = args => <Typography {...args} />
 h1.args = {
     variant:"h1",
     children: "h1. Heading",
-    align:"right"
 }
 
 export const h2 = args => <Typography {...args} />
