@@ -13,6 +13,7 @@ export default {
     },
     args: {
         variant: "standard",
+        children: "Name"
         
     },
     argsTypes:{

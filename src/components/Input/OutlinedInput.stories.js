@@ -12,6 +12,7 @@ export default {
     },
     args: {
         variant: "outlined",
+        children: "Name"
         
     },
     argsTypes:{

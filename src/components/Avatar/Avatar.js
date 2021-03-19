@@ -19,7 +19,6 @@ const textParser = (str) => {
     return res.join('');
 }
 
-textParser("Soham Shah")
 function Image({src}){
     console.log(src);
     return <img className="na-avatar-image" src={`${src}`}/>
@@ -38,7 +37,7 @@ function Avatar(props){
     }
     
     return (
-        <div className={`na-avatar na-avatar-${size}`}>
+        <div className={`na-avatar na-avatar-${size}`} {...rest}>
             {
         {
           'image': <Image src={`${src}`} />,
