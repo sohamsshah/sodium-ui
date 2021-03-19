@@ -14,21 +14,33 @@ Swiftly develop elegant [React](https://reactjs.org/) apps. **Sodium**  is a sim
 
 ---
 
-
 ## **Installation** 
 
 Sodium-UI is available as an [npm package](https://www.npmjs.com/package/sodium-ui).
 
 ```sh
-npm i sodium-ui
+// using npm
+$ npm i sodium-ui
+
+// using yarn
+$ yarn add sodium-ui
 ```
+
+## **Features**
+* Sodium UI has React Components that makes your life easy while developing React Apps.
+* Styling components in **Sodium** is quite simple and flexible to handle.
+* Resusable and Atomic Design Patterns are followed while development.
+* UI development, documentation and testing done presently using [Storybook](https://storybook.js.org/)
+* Module Bundler used for this project: [rollup.js](https://rollupjs.org/) 
+
+Have a feature request? Let us know by opening an [issue](https://github.com/sohamsshah/sodium-ui/issues)!
 
 ## **Usage** 
 
 ```jsx
 import * as React from 'react';
 import ReactDOM from 'react-dom';
-import Button from 'sodium-ui';
+import {Button} from 'sodium-ui';
 
 function App() {
   return <Button variant="primary">Hello World</Button>;
@@ -36,6 +48,10 @@ function App() {
 
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
+
+## **We love Contributions** 💖
+**Sodium UI** is truly Open Source. Any sort of contribution to this project are highly appreciated. Read the [Contributing Guideline](/CONTRIBUTING.md) to learn more on how to setup development environment, propose bug fixes or improvements and how to build and test your changes to Sodium UI.
+
 
 ## **License** 
 
