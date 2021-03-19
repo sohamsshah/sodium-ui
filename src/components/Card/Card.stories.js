@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import Card from "./Card";
 import Button from "./../Button/Button"
 

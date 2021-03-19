@@ -2,8 +2,8 @@ import React from "react"
 import Paper from "./../Paper/Paper"
 import Typography from "./../Typography/Typography"
 
-const Img = ({src, width = "100%", height="100%", ...rest}) => {
-    return(<img src={src} style={{width: `${width}`, height: `${height}`}} {...rest}></img>)
+const Img = ({src,alt="card image", width = "100%", height="100%", ...rest}) => {
+    return(<img alt={alt} src={src} style={{width: `${width}`, height: `${height}`}} {...rest}></img>)
 }
 
 const Title = ({children, ...rest}) => {
