@@ -17,9 +17,7 @@ const SimpleAlert = ({variant, children, ...rest}) => {
 export default function Alert(props){
     const {variant="primary", dismissible=false, show=true, children, ...rest} = props;
     let display;
-    
     (show)?(display="block"):(display="none");
-    {console.log(display)}
     return(
         (dismissible)?(<DismissibleAlert variant={variant} style={{display:`${display}`}} {...rest}>{children}</DismissibleAlert>):(<SimpleAlert variant={variant} style={{display:`${display}`}} {...rest}>{children}</SimpleAlert>)
     )

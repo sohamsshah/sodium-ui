@@ -5,7 +5,6 @@ import Input from "./Input"
 export default {
     title: 'Sodium UI/Input/Standard', //mandatory
     component:Input,
-    component:Input,
     parameters: {
         actions: {
           handles: ['click'],
