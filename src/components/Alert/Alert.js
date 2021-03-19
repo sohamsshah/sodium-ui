@@ -1,20 +1,26 @@
 import React from "react"
+import "./Alert.css"
 
-const DismissibleAlert = ({children, ...rest}) => {
-    return(<div {...rest}>{children}</div>)
+const DismissibleAlert = ({variant,children, ...rest}) => {
+    return(
+    <div className={`na-alert na-alert-${variant} na-alert-dismissible`} {...rest}>
+        
+        {children}
+        <button className="na-alert-dismiss">X</button>
+    </div>)
 }
 
-const SimpleAlert = ({children, ...rest}) => {
-    return(<div {...rest}>{children}</div>)
+const SimpleAlert = ({variant, children, ...rest}) => {
+    return(<div className={`na-alert na-alert-${variant}`} {...rest}>{children}</div>)
 }
 
 export default function Alert(props){
-    const {variant, dismissible, show, children, ...rest} = props;
+    const {variant="primary", dismissible=false, show=true, children, ...rest} = props;
     let display;
     
     (show)?(display="block"):(display="none");
     {console.log(display)}
     return(
-        (dismissible)?(<DismissibleAlert style={{display:`${display}`}} {...rest}>{children}</DismissibleAlert>):(<SimpleAlert style={{display:`${display}`}} {...rest}>{children}</SimpleAlert>)
+        (dismissible)?(<DismissibleAlert variant={variant} style={{display:`${display}`}} {...rest}>{children}</DismissibleAlert>):(<SimpleAlert variant={variant} style={{display:`${display}`}} {...rest}>{children}</SimpleAlert>)
     )
 }
