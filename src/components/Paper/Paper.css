@@ -1,0 +1,64 @@
+.na-paper{
+    width:128px;
+    height:128px;
+    padding:1%;
+    border-radius: 6px;
+}
+
+.na-paper-outlined{
+    border: solid 1px rgba(158, 158, 158, 0.5);
+}
+
+.na-paper-square{
+    border-radius: 0;
+}
+
+.na-paper-elevation-0{
+    box-shadow:0 0 0 0 rgba(0,0,0,0.2)
+}
+
+.na-paper-elevation-1{
+    box-shadow:0 1px 1.5px 0 rgba(0,0,0,0.2)    
+}
+
+.na-paper-elevation-2{
+    box-shadow:0 2px 3px 0 rgba(0,0,0,0.2)
+}
+
+.na-paper-elevation-3{
+    box-shadow:0 3px 4.5px 0 rgba(0,0,0,0.2)
+
+}
+
+.na-paper-elevation-4{
+    box-shadow:0 4px 6px 0 rgba(0,0,0,0.2)
+
+}
+
+.na-paper-elevation-5{
+    box-shadow:0 5px 7.5px 0 rgba(0,0,0,0.2)
+
+}
+
+.na-paper-elevation-6{
+    box-shadow:0 6px 9px 0 rgba(0,0,0,0.2)
+
+}
+
+.na-paper-elevation-7{
+    box-shadow:0 7px 10.5px 0 rgba(0,0,0,0.2)
+
+    
+}
+
+.na-paper-elevation-8{
+    box-shadow:0 8px 10.5px 0 rgba(0,0,0,0.2)
+}
+
+.na-paper-elevation-9{
+    box-shadow:0 9px 13.5px 0 rgba(0,0,0,0.2)
+}
+
+.na-paper-elevation-10{
+    box-shadow:0 10px 15px 0 rgba(0,0,0,0.2)
+}
