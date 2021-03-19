@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import Typography from "./Typography";
 
 // meta data 
@@ -6,7 +6,7 @@ export default {
     title: 'Sodium UI/Typography', //mandatory
     component:Typography,
     argsTypes:{
-
+        
     }
 }
 
