@@ -3,7 +3,7 @@ import Input from "./Input"
 
 // meta data 
 export default {
-    title: 'Sodium UI/Form/Input/Standard', //mandatory
+    title: 'Sodium UI/Input/Standard', //mandatory
     component:Input,
     component:Input,
     parameters: {

@@ -3,7 +3,7 @@ import Input from "./Input"
 
 // meta data 
 export default {
-    title: 'Sodium UI/Form/Input/Outlined', //mandatory
+    title: 'Sodium UI/Input/Outlined', //mandatory
     component:Input,
     parameters: {
         actions: {

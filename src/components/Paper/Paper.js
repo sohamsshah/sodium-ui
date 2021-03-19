@@ -28,7 +28,7 @@ export default function Paper(props){
             {
               'outlined': <Outlined children={children} square={square} {...rest} />,
               'elevation': <Elevation elevation={elevation} children={children} square={square} {...rest} />
-            }[variant]
+            }[variant] || <Elevation elevation={elevation} children={children} square={square} {...rest} />
              
     )
 

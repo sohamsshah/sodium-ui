@@ -3,7 +3,7 @@ import Button from "./Button";
 
 // meta data 
 export default {
-    title: 'Sodium UI/Form/Button/Bordered', //mandatory
+    title: 'Sodium UI/Button/Bordered', //mandatory
     component:Button,
     parameters: {
         actions: {
