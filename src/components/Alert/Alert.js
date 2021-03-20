@@ -6,7 +6,7 @@ const DismissibleAlert = ({variant,children, ...rest}) => {
     <div className={`na-alert na-alert-${variant} na-alert-dismissible`} {...rest}>
         
         {children}
-        <button className="na-alert-dismiss">X</button>
+        <button className="na-alert-dismiss">×</button>
     </div>)
 }
 

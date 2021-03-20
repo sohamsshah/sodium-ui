@@ -39,17 +39,21 @@
 }
 
 .na-alert-dismiss{
-    color: var(--primary-border-color);
+    color: #5e5d5d;
     position:absolute;
-    top:0.75rem;
+    top:0.5rem;
     right:0.5rem;
     background:none;
-    border: var(--primary-color);
+    border:none;
+    cursor:pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
 }
 
 .na-alert-dismiss:hover{
     
-    color: var(--primary-color);
+    color: #212121;
     cursor:pointer;
 }
 
