@@ -9,9 +9,7 @@ const Header = ({children, ...rest}) => {
             <Typography variant="h6"style={{fontWeight: "bold"}}>
             {children}
             </Typography>
-            <button className="na-toast-dismiss">×</button>
-            
-            
+            <button className="na-toast-dismiss">×</button> 
         </div>
     )
 }
@@ -27,7 +25,7 @@ const Body = ({children, ...rest}) => {
 }
 
 export default function Toast(props){
-    const {show, children, ...rest} = props;
+    const {show=true, children, ...rest} = props;
     let visibility;
     (show)?(visibility = "show"):(visibility="hide")
     return(

@@ -17,7 +17,7 @@ export const SimpleToast = () => {
         Sodium
     </Toast.Header>
     <Toast.Body>
-        This is sodium toast
+        Hello World! This is sodium toast
     </Toast.Body>
 </Toast>)
 }

@@ -7,9 +7,16 @@
     
 }
 
+.na-toast-show{
+    display:block;
+}
+
+.na-toast-hide{
+    display:none;
+}
+
 .na-toast-header{
     display:flex;
-    /* width:100%; */
     padding:0 0.5rem;
     border: 1px solid rgba(0,0,0,.05)
     
@@ -32,4 +39,9 @@
 
 .na-toast-dismiss:focus{
     outline:none;
+}
+
+
+.na-toast-body{
+    padding:0.5rem;
 }
