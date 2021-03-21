@@ -19,6 +19,11 @@
     border: 1px solid #888;
     border-radius: 4px;
   }
+
+.na-modal-animation-true{
+    /* TODO */
+    transition:all 1s ease-in-out;
+}
 .na-modal-show{
     display:block;
 }
@@ -28,6 +33,28 @@
     padding: 1rem 0.5rem;
     font-size: 1.5rem;
     font-weight: 600;
+    display: flex;
+}
+
+.na-modal-dismiss{
+    margin-left: auto;
+    background: none;
+    color: #5e5d5d;
+    border:none;
+    cursor:pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.na-modal-dismiss:hover{
+    
+    color: #212121;
+    cursor:pointer;
+}
+
+.na-modal-dismiss:focus{
+    outline:none;
 }
 
 .na-modal-body{

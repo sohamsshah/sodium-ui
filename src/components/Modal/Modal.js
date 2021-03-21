@@ -2,10 +2,13 @@ import React, { useEffect } from "react"
 import Typography from "./../Typography/Typography"
 import "./Modal.css"
 
-const Title = ({children, ...rest}) => {
+const Title = ({closeButton={show:false}, children, ...rest}) => {
+    const {show, onHide} = closeButton;
     return(
         <div className = {`na-modal-title`} {...rest}>
            {children}
+           
+           {(show)?(<button onClick={() => onHide()} className="na-modal-dismiss">×</button>):("")}
         </div>
     )
 }
@@ -22,13 +25,12 @@ const Footer = ({children, ...rest}) => {
     return(
         <div className = {`na-modal-footer`} {...rest}>
            {children}
-           {console.log(children)}
         </div>
     )
 }
 
 export default function Modal(props){
-    const {show=true, onHide, size="medium", height, children, ...rest} = props;
+    const {show=true, onHide, size="medium", animation=true,  children, ...rest} = props;
     const setSize = (size) => {
         switch(size){
         case "small":
@@ -58,11 +60,12 @@ export default function Modal(props){
         }, [])
     return(
         <div className={`na-modal na-modal-${visibility}`} {...rest}>
-
-            <div style={{width:`${sizeVariant}`}} className="na-modal-content">
-                {children}
+            
+            <div style={{width:`${sizeVariant}`}} className={`na-modal-content na-modal-animation-${animation}`}>
+                {children}  
             </div>
         </div>
+        
     )
 }
 
