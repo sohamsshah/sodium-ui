@@ -24,7 +24,7 @@ Standard.args = {
     children: <div>Hello World</div>,
     p: "2rem",
     m:"1rem",
-    bgcolor:"yellow",
+    bgcolor:"#eee",
     color: "#212121",
     h: "50%",
     w: "50%"
