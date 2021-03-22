@@ -13,6 +13,7 @@
     "build-sodium": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
     "chromatic": "npx chromatic --project-token 1fa832d3a2eb",
+    "predeploy": "npm run build-storybook -- -o ./storybook-static",
     "deploy": "gh-pages -d storybook-static" 
   },
   "eslintConfig": {
