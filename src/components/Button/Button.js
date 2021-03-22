@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Button.css"
-function Button(props){
+
+export default function Button(props){
     const {variant = "default", kind="filled", children, ...rest} = props;
     return (
         <button className={`na-button na-${variant} na-${kind}`} {...rest}>
@@ -8,5 +9,3 @@ function Button(props){
         </button>
     )
 }
-
-export default Button;

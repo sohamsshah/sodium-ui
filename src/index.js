@@ -1,14 +1,12 @@
-import Button from "./components/Button/Button"
-import Avatar from "./components/Avatar/Avatar"
-import Box from "./components/Box/Box"
-import Alert from "./components/Alert/Alert"
-import List from "./components/List/List"
-import Card from "./components/Card/Card"
-import Modal from "./components/Modal/Modal"
-import Paper from "./components/Paper/Paper"
-import Toast from "./components/Toast/Toast"
-import Spinner from "./components/Spinner/Spinner"
-import Typography from "./components/Typography/Typography"
-import Input from "./components/Input/Input"
-
-export {Button, Avatar, Box, Input, Alert, List, Card, Modal, Paper, Spinner, Toast, Typography}
+export {default as Button} from "./components/Button/Button";
+export {default as Avatar} from "./components/Avatar/Avatar";
+export {default as Box} from "./components/Box/Box";
+export {default as Alert} from "./components/Alert/Alert";
+export {default as List} from "./components/List/List";
+export {default as Card} from "./components/Card/Card";
+export {default as Modal} from "./components/Modal/Modal";
+export {default as Paper} from "./components/Paper/Paper";
+export {default as Toast} from "./components/Toast/Toast";
+export {default as Spinner} from "./components/Spinner/Spinner";
+export {default as Typography} from "./components/Typography/Typography";
+export {default as Input} from "./components/Input/Input";
