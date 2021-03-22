@@ -12,7 +12,8 @@
     "build-storybook": "build-storybook -s public",
     "build-sodium": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "chromatic": "npx chromatic --project-token 1fa832d3a2eb"
+    "chromatic": "npx chromatic --project-token 1fa832d3a2eb",
+    "deploy": "gh-pages -d storybook-static" 
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
     "@storybook/react": "^6.1.21",
     "@storybook/theming": "^6.1.21",
     "chromatic": "^5.7.0",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.3",
