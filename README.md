@@ -6,13 +6,14 @@
 
 <div align="center">
 
-Swiftly develop elegant [React](https://reactjs.org/) apps. **Sodium**  is a simple, modular and customizable web component library to build beautiful and accessible UI pieces for your React needs.
+Swiftly develop elegant [React](https://reactjs.org/) apps. **Sodium**  is a simple, modular, customizable and of course, **React(ive)** web component library to build beautiful and accessible UI pieces for your React needs.
 
 <!-- [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sohamsshah/sodium-ui/blob/master/LICENSE) -->
 
 </div>
 
 ---
+
 
 ## **Installation** 
 
@@ -30,7 +31,7 @@ $ yarn add sodium-ui
 * Sodium UI has React Components that makes your life easy while developing React Apps.
 * Styling components in **Sodium** is quite simple and flexible to handle.
 * Resusable and Atomic Design Patterns are followed while development.
-* UI development, documentation and testing done presently using [Storybook](https://storybook.js.org/)
+* UI development, documentation and testing done presently using [Storybook](https://storybook.js.org/). 
 * Module Bundler used for this project: [rollup.js](https://rollupjs.org/) 
 
 Have a feature request? Let us know by opening an [issue](https://github.com/sohamsshah/sodium-ui/issues)!
@@ -49,8 +50,11 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
+## Components available in Sodium-UI
+Sodium-UI has all the components deployed on the [Component Site](https://sohamsshah.github.io/sodium-ui/) that is essentially Storybook-build for developing and building React Components in isolation. If you are a user, or a developer or a tester; this site can be helpful for visualizing available components in Sodium-UI.
+
 ## **We love Contributions** 💖
-**Sodium UI** is truly Open Source. Any sort of contribution to this project are highly appreciated. Read the [Contributing Guideline](/CONTRIBUTING.md) to learn more on how to setup development environment, propose bug fixes or improvements and how to build and test your changes to Sodium UI.
+**Sodium UI** is truly Open Source. Any sort of contribution to this project are highly appreciated. Read the [Contributing Guideline](/CONTRIBUTING.md) to learn more on how to setup development environment, propose bug fixes or improvements and how to build and test your changes to Sodium UI. 
 
 
 ## **License** 
