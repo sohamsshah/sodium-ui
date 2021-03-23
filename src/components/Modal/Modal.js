@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import Typography from "./../Typography/Typography"
+import Typography from "./../Typography/Typography" // is not used
 import "./Modal.css"
 
 const Title = ({closeButton={show:false}, children, ...rest}) => {
@@ -31,7 +31,7 @@ const Footer = ({children, ...rest}) => {
 
 export default function Modal(props){
     const {show=true, onHide, size="medium", animation=true,  children, ...rest} = props;
-    const setSize = (size) => {
+    const setSize = (size) => { // dont put the code in the component if it is not dependent on it
         switch(size){
         case "small":
             return "360px";
@@ -46,21 +46,22 @@ export default function Modal(props){
     let sizeVariant = setSize(size);
 
     let visibility;
-    (show)?(visibility="show"):(visibility="hide")
-    const handleClick = (event) => {
+    (show)?(visibility="show"):(visibility="hide") // get prettier, this kind of formatting is unacceptable in todays standarts
+    const handleClick = React.useCallback((event) => { // You need to wrap functions in `useCallback` if you are planning to use functional components
             if(event.target.className === "na-modal na-modal-show"){
                 onHide();
             }
-          }
+    }, [onHide])
+    // Use spaces between different blocks
     useEffect(() => {
         window.addEventListener('click', handleClick);
           return () => {
             window.removeEventListener('click', handleClick);
           };
-        }, [])
+    }, [])
+        // Use spaces between different blocks
     return(
         <div className={`na-modal na-modal-${visibility}`} {...rest}>
-            
             <div style={{width:`${sizeVariant}`}} className={`na-modal-content na-modal-animation-${animation}`}>
                 {children}  
             </div>
