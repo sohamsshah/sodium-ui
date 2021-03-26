@@ -1,8 +1,8 @@
 :root{
-    --primary-color: #004085;
-    --primary-background-color: #cce5ff;
-    --primary-border-color: #b8daff;
-    --secondary-color: #383d41;
+    --na-primary-color: #004085;
+    --na-primary-background-color: #cce5ff;
+    --na-primary-border-color: #b8daff;
+    --na-secondary-color: #383d41;
     --secondary-background-color: #e2e3e5;
     --secondary-border-color: #d6d8db;
     --success-color: #155724;
@@ -29,9 +29,9 @@
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: .25rem;
-    color: var(--primary-color);
-    background-color: var(--primary-background-color);
-    border-color: var(--primary-border-color);
+    color: var(--na-primary-color);
+    background-color: var(--na-primary-background-color);
+    border-color: var(--na-primary-border-color);
 }
 
 .na-alert-dismissible{
@@ -62,13 +62,13 @@
 }
 
 .na-alert-primary{
-    color: var(--primary-color);
-    background-color: var(--primary-background-color);
-    border-color: var(--primary-border-color);
+    color: var(--na-primary-color);
+    background-color: var(--na-primary-background-color);
+    border-color: var(--na-primary-border-color);
 }
 
 .na-alert-secondary{
-    color: var(--secondary-color);
+    color: var(--na-secondary-color);
     background-color: var(--secondary-background-color);
     border-color: var(--secondary-border-color);
 }
