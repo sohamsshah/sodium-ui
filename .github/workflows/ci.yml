@@ -19,12 +19,12 @@ jobs:
           - windows-latest
 
         node-version:
-          - 13.x
           - 14.x
+          - 16.x
 
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
       - name: setup node ${{matrix.node-version}}
         uses: actions/setup-node@v1.4.4
